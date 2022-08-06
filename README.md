@@ -1,5 +1,6 @@
 # B450M-i5-10400f-RX6600XT-Opencore
-This is OpenCore (0.8.2) EFI files for GIGABYTE B450M , Intel i5-10400f and RX 6600XT or RX470
+
+This is OpenCore (0.8.2) EFI files for GIGABYTE B450M , Intel i5-10400f and RX 6600XT or RX470，MacOS Monterey 12.5(21G72)。
 
 RX6600XT 显卡增加启动参数 NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args -> agdpmod=pikera ，否则会启动黑屏。
 
