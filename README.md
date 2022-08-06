@@ -8,3 +8,6 @@ RX6600XT 显卡增加启动参数 NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE4199
 RX470 显卡取消启动参数 NVRAM -> Add -> 7C436110-AB2A-4BBB-A880-FE41995C9F82 -> boot-args -> agdpmod=pikera。
 
 ![image](https://raw.githubusercontent.com/SeanChang/B450M-i5-10400f-RX6600XT-Opencore/main/IMG/470.jpeg)
+
+支持显卡硬解
+![image](https://raw.githubusercontent.com/SeanChang/B450M-i5-10400f-RX6600XT-Opencore/main/IMG/videopro.jpg)
