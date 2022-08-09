@@ -307,18 +307,12 @@
 	</dict>
 	<key>DeviceProperties</key>
 	<dict>
+		<key>Delete</key>
+		<dict/>
 		<key>Add</key>
 		<dict>
 			<key>#PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key>##AAPL,ig-platform-id</key>
-				<data></data>
-				<key>##framebuffer-patch-enable</key>
-				<data>AQAAAA==</data>
-				<key>##framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-				<key>##model</key>
-				<string>Intel UHD Graphics 630</string>
 				<key>#ig-platform-id备选方案</key>
 				<string>00009B3E</string>
 				<key>#备注</key>
@@ -327,19 +321,27 @@
 				<string>iMac19,1或Mac mini8,1</string>
 				<key>#适用</key>
 				<string>无独显，使用核显作为主显卡，视频输出</string>
+				<key>##AAPL,ig-platform-id</key>
+				<data></data>
+				<key>##framebuffer-patch-enable</key>
+				<data>AQAAAA==</data>
+				<key>##framebuffer-stolenmem</key>
+				<data>AAAwAQ==</data>
+				<key>##model</key>
+				<string>Intel UHD Graphics 630</string>
 			</dict>
 			<key>##PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
-				<key>##AAPL,ig-platform-id</key>
-				<data>AwCRPg==</data>
-				<key>##model</key>
-				<string>Intel UHD Graphics 630</string>
 				<key>#备注</key>
 				<string>使用时记得去掉中文注释内容</string>
 				<key>#推荐机型</key>
 				<string>iMac19,1</string>
 				<key>#适用</key>
 				<string>使用核显辅助独显硬解加速</string>
+				<key>##AAPL,ig-platform-id</key>
+				<data>AwCRPg==</data>
+				<key>##model</key>
+				<string>Intel UHD Graphics 630</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
@@ -352,8 +354,6 @@
 				<data>AQAAAA==</data>
 			</dict>
 		</dict>
-		<key>Delete</key>
-		<dict/>
 	</dict>
 	<key>Kernel</key>
 	<dict>
@@ -980,9 +980,9 @@
 			<false/>
 			<key>AppleXcpmForceBoost</key>
 			<false/>
-			<key>CustomSMBIOSGuid</key>
-			<false/>
 			<key>CustomPciSerialDevice</key>
+			<false/>
+			<key>CustomSMBIOSGuid</key>
 			<false/>
 			<key>DisableIoMapper</key>
 			<false/>
@@ -1046,13 +1046,13 @@
 			<key>LauncherPath</key>
 			<string>Default</string>
 			<key>PickerAttributes</key>
-			<integer>129</integer>
+			<integer>17</integer>
 			<key>PickerAudioAssist</key>
 			<false/>
 			<key>PickerMode</key>
-			<string>External</string>
+			<string>Builtin</string>
 			<key>PickerVariant</key>
-			<string>Acidanthera\GoldenGate</string>
+			<string>Auto</string>
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>ShowPicker</key>
@@ -1133,33 +1133,6 @@
 		</dict>
 		<key>Serial</key>
 		<dict>
-			<key>Custom</key>
-			<dict>
-				<key>BaudRate</key>
-				<integer>115200</integer>
-				<key>ClockRate</key>
-				<integer>1843200</integer>
-				<key>DetectCable</key>
-				<false/>
-				<key>ExtendedTxFifoSize</key>
-				<integer>64</integer>
-				<key>FifoControl</key>
-				<integer>7</integer>
-				<key>LineControl</key>
-				<integer>7</integer>
-				<key>PciDeviceInfo</key>
-				<data>/w==</data>
-				<key>RegisterAccessWidth</key>
-				<integer>8</integer>
-				<key>RegisterBase</key>
-				<integer>1016</integer>
-				<key>RegisterStride</key>
-				<integer>1</integer>
-				<key>UseHardwareFlowControl</key>
-				<false/>
-				<key>UseMmio</key>
-				<false/>
-			</dict>
 			<key>Init</key>
 			<false/>
 			<key>Override</key>
@@ -1518,14 +1491,24 @@
 		<true/>
 		<key>CustomMemory</key>
 		<false/>
+		<key>UpdateDataHub</key>
+		<true/>
+		<key>UpdateNVRAM</key>
+		<true/>
+		<key>UpdateSMBIOS</key>
+		<true/>
+		<key>UpdateSMBIOSMode</key>
+		<string>Create</string>
+		<key>UseRawUuidEncoding</key>
+		<false/>
 		<key>Generic</key>
 		<dict>
 			<key>AdviseFeatures</key>
 			<false/>
-			<key>MaxBIOSVersion</key>
-			<false/>
 			<key>MLB</key>
 			<string>C02024902GUPHCDFB</string>
+			<key>MaxBIOSVersion</key>
+			<false/>
 			<key>ProcessorType</key>
 			<integer>0</integer>
 			<key>ROM</key>
@@ -1541,16 +1524,6 @@
 			<key>SystemUUID</key>
 			<string>80A2E454-5A66-44B4-91A5-7C7FD6A3C8CF</string>
 		</dict>
-		<key>UpdateDataHub</key>
-		<true/>
-		<key>UpdateNVRAM</key>
-		<true/>
-		<key>UpdateSMBIOS</key>
-		<true/>
-		<key>UpdateSMBIOSMode</key>
-		<string>Create</string>
-		<key>UseRawUuidEncoding</key>
-		<false/>
 	</dict>
 	<key>UEFI</key>
 	<dict>
@@ -1583,10 +1556,10 @@
 			<integer>5</integer>
 			<key>PointerPollMask</key>
 			<integer>-1</integer>
-			<key>PointerPollMin</key>
-			<integer>10</integer>
 			<key>PointerPollMax</key>
 			<integer>80</integer>
+			<key>PointerPollMin</key>
+			<integer>10</integer>
 			<key>PointerSpeedDiv</key>
 			<integer>1</integer>
 			<key>PointerSpeedMul</key>
@@ -1757,7 +1730,7 @@
 				<key>Comment</key>
 				<string>Ps2KeyboardDxe.efi</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>Ps2KeyboardDxe.efi</string>
 			</dict>
@@ -1767,7 +1740,7 @@
 				<key>Comment</key>
 				<string>Ps2MouseDxe.efi</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>Path</key>
 				<string>Ps2MouseDxe.efi</string>
 			</dict>
@@ -1859,10 +1832,10 @@
 			<false/>
 			<key>TextRenderer</key>
 			<string>BuiltinGraphics</string>
-			<key>UgaPassThrough</key>
-			<false/>
 			<key>UIScale</key>
 			<integer>0</integer>
+			<key>UgaPassThrough</key>
+			<false/>
 		</dict>
 		<key>ProtocolOverrides</key>
 		<dict>
