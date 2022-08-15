@@ -1,4 +1,4 @@
-# B450M-i5-10400f-RX6600XT（RX470）-Hackintosh-Opencore
+# B450M-i5-10400f-RX6600XT（RX470）-Hackintosh-Opencore #黑苹果
 
 This is OpenCore (0.8.2) EFI files for GIGABYTE B450M , Intel i5-10400f and RX 6600XT or RX470，MacOS Monterey 12.5(21G72)。
 
